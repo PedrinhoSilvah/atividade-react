@@ -1,6 +1,11 @@
 const HelloWorld1 = (props) => {
 
-    return <p>{props.text}</p>
+    const date = new Date().toLocaleDateString()
+    const horus = new Date().toLocaleTimeString()
+
+ 
+
+    return <><p>{props.text} {date} {horus} </p></>
 
 }
 

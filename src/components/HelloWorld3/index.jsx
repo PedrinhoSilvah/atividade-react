@@ -2,8 +2,13 @@ import React from "react";
 
 class HelloWorld3 extends React.Component {
     
+    
+
     render() {
-        return <p>HelloWorld</p>
+        const date = new Date().toLocaleDateString()
+        const horus = new Date().toLocaleTimeString()
+
+        return <p>HelloWorld {date} {horus} </p>
     }
 }
 
